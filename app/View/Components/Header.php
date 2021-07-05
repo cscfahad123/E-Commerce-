@@ -6,7 +6,11 @@ use Illuminate\View\Component;
 
 class Header extends Component
 {
-   
+  public $name;
+ 
+  
+  
+ 
     
     
 
@@ -15,9 +19,15 @@ class Header extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name)
+
     {
-    
+        $this->name =$name;
+       
+       
+        
+       
+       
     }
 
     /**
