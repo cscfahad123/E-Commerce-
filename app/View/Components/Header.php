@@ -7,6 +7,7 @@ use Illuminate\View\Component;
 class Header extends Component
 {
   public $name;
+  public $fruits;
  
   
   
@@ -19,10 +20,11 @@ class Header extends Component
      *
      * @return void
      */
-    public function __construct($name)
+    public function __construct($name,$fruits)
 
     {
         $this->name =$name;
+        $this->fruits=$fruits;
        
        
         

@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    
+    public function index(){
+        $fruits =array('Mango','Banana','Apple','Orange','Pineapple');
+        return view('welcome',compact('fruits'));
+    }
 }
